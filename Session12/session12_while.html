@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - While</title>
+</head>
+
+<body>
+    <script>
+        // Sử dụng vòng lặp while - Tính tổng các số nhập từ bàn phím, kết thúc khi nhập 0
+        // Khai báo biến chứa giá trị nhập từ bàn phím
+        let number = 1;
+        // Khởi tạo giá trị tổng các số nhập từ bàn phím
+        let sumNumbers = 0;
+        while (number != 0) {
+            number = Number(prompt("Nhập một số nguyên từ bàn phím"));
+            sumNumbers += number;
+        }
+        alert("Tổng các số vừa nhập là: " + sumNumbers);
+        // Vòng lặp vô hạn
+        // let a = 0;
+        // while (a < 10) {
+        //     console.log("Vòng lặp vô hạn");
+        // }
+    </script>
+</body>
+
+</html>

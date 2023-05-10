@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - do...while</title>
+</head>
+
+<body>
+    <script>
+        // Sử dụng do...while - Tính tổng các số nguyên chẵn nhập từ bàn phím
+        // Kết thúc khi nhập 0
+        let number;
+        let sumNumbers = 0;
+        do {
+            number = Number(prompt("Enter a number. Enter 0 to exit"));
+            if (number % 2 == 0) {
+                sumNumbers += number;
+            }
+        } while (number != 0);
+        console.log("Tổng các số nguyên chẵn vừa nhập là: ", sumNumbers);
+        // Sử dụng vòng lặp in ra các số nguyên tố trong khoảng 1 - n(nhập từ bàn phím)
+        // n=10 --> tìm các số nguyên tố trong khoang 1-10: 2,3,5,7
+        // Bước 1: Nhập số n
+        let n = Number(prompt("Nhập một số nguyên:"));
+        // Bước 2: Duyệt các số từ 1 - n (x)
+        for (let i = 1; i < n; i++) {
+            // Bước 3:Kiểm tra i có phải là số nguyên tố không
+            if (i >= 2) {
+                let flagNT = true;
+                for (let j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j == 0) {
+                        // j là ước số của i
+                        flagNT = false;
+                        break;
+                    }
+                }
+                if (flagNT) {
+                    // i là số nguyên tố
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

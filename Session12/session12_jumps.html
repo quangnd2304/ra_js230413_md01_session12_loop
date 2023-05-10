@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumps</title>
+</head>
+
+<body>
+    <script>
+        // break: thoát khỏi vòng lặp, switch...case
+        console.log("DEMO VỀ CÂU LỆNH BREAK");
+
+        for (let i = 1; i <= 5; i++) {
+            if (i == 3) {
+                // thoát khỏi vòng for gần nhất của nó - thoát khỏi for i
+                break;
+            }
+            console.log("Vòng lặp thứ " + i);
+        }
+
+        // continue: dừng vòng lặp tại đó và chuyển sang vòng lặp tiếp theo
+        console.log("DEMO VỀ CÂU LỆNH CONTINUE");
+        debugger;
+        for (let i = 1; i <= 5; i++) {
+            if (i == 3) {
+                // thoát khỏi vòng for gần nhất của nó - thoát khỏi for i
+                continue;
+            }
+            console.log("Vòng lặp thứ " + i);
+        }
+
+    </script>
+</body>
+
+</html>

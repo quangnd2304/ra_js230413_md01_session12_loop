@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop - For</title>
+</head>
+
+<body>
+    <script>
+        // Sử dụng vòng lặp for - In ra các số từ 1 - 5
+        // Syntax: for(initial variable controls; expression; ASC/DESC)  
+        for (let i = 1; i <= 5; i++) {
+            // Block
+            console.log("Vòng lặp thứ " + i);
+            console.log("Giá trị--->", i);
+        }
+        // Sử dụng vòng lặp for - tìm giá trị trung bình từ 0 - 10
+        let i, j;
+        for (i = 0, j = 10; i < j; i++, j--) {
+
+        }
+        // kết thúc vòng for thì i = j = 5
+        // Có thể in được giá trị i hoặc j
+        console.log("Giá trị trung bình trong khoảng 0-10 là:", i);
+        // Các lỗi thường gặp khi sử dụng vòng for: vòng lặp vô hạn
+        for (let index = 0; index < 10; index--) {
+            console.log("Vòng lặp đang thực hiện");
+
+        }
+
+
+    </script>
+</body>
+
+</html>
